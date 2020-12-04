@@ -28,7 +28,7 @@ export default {
     }
   },
   created(){
-    this.$axios.get('/getUser').then((data)=>{
+    this.$axios.get('/api/getUser').then((data)=>{
       const result = data.data;
       this.users = result;
     });
